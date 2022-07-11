@@ -1,4 +1,4 @@
-DEVICE_PATH := device/samsung/gta7litewifi
+DEVICE_PATH := device/samsung/gta7lite
 ALLOW_MISSING_DEPENDENCIES := true
 
 # Bootloader
@@ -58,7 +58,7 @@ BOARD_RAMDISK_OFFSET := 0x11a88000
 BOARD_KERNEL_SECOND_OFFSET := 0xbff88000
 BOARD_KERNEL_TAGS_OFFSET := 0x07808000
 BOARD_DTB_OFFSET := 0x07808000
-BOARD_DTB_SIZE := 343418
+BOARD_DTB_SIZE := 343645
 BOARD_MKBOOTIMG_ARGS := \
 	--kernel_offset $(BOARD_KERNEL_OFFSET) \
 	--ramdisk_offset $(BOARD_RAMDISK_OFFSET) \
@@ -66,7 +66,7 @@ BOARD_MKBOOTIMG_ARGS := \
 	--second_offset $(BOARD_KERNEL_SECOND_OFFSET) \
 	--header_version $(BOARD_BOOT_HEADER_VERSION) \
 	--pagesize $(BOARD_KERNEL_PAGESIZE) \
-	--board "SRPUA15A001" \
+	--board "SRPTL16A001" \
 	--dtb $(TARGET_PREBUILT_DTB) \
 	--dtb_offset $(BOARD_DTB_OFFSET) \
 	--recovery_dtbo $(BOARD_PREBUILT_DTBOIMAGE)
